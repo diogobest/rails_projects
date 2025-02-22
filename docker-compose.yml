@@ -1,9 +1,0 @@
-services:
-  web:
-    image: ruby:bookworm
-    volumes:
-      - .:/code
-    ports:
-      - "3030:3030"
-    working_dir: /code
-    command: bundle exec rails s -p 3030 -b 0.0.0.0
